@@ -49,12 +49,12 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="py-16">
-        <h2 className="text-4xl font-extrabold text-center text-[#00EEFF] mb-10">
+    <div className="py-16 bg-base-200 my-10 rounded-lg">
+        <h2 className="text-4xl font-extrabold text-center text-teal-600 mb-10">
           Contact Me
         </h2>
-      <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 ">
-        <section className="contact py-20 px-4 bg-gray-900 text-white "
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center">
+        <section className="contact py-20 mx-4 btnn border"
         data-aos="fade-right">
           <div className="container mx-auto text-center">
             <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
@@ -87,7 +87,7 @@ const ContactSection = () => {
               <div className="text-start">
               <button
                 type="submit"
-                className="bg-[#00EEFF]  text-gray-900 px-6 py-3 rounded-lg font-medium transition duration-300 hover:bg-[#00ccff]"
+                className="btnn hover:translate-y-2  text-teal-600 text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-teal-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10  overflow-hidden border-2 rounded-xl group py-2 px-4  hover:bg-teal-600 transition duration-300"
               >
                 Send Email
               </button>
@@ -102,7 +102,7 @@ const ContactSection = () => {
           </div>
         </section>
 
-        <section data-aos="fade-left">
+        <section className="mx-3" data-aos="fade-left">
             <ContactCard
             ></ContactCard>
         </section>

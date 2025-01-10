@@ -69,7 +69,7 @@ const Navbar = () => {
             href="https://drive.google.com/file/d/1vvnM4zc6D5i36-odQVDUEXXIgn2plNzV/view?usp=sharing"
             target="_blank" 
             rel="noopener noreferrer"
-            className="btnn   hover:bg-teal-600 py-3 hover:text-white"
+            className="btnn btn  hover:bg-teal-600 py-3 hover:text-white"
           >
             Download Resume
           </a>

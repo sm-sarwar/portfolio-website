@@ -12,12 +12,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
+import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Initialize AOS
     AOS.refresh(); // Refresh AOS to apply animations on dynamic content
   }, []);
+
+  const handleDone = () => {
+    console.log(`Done after 5 loops!`);
+  };
 
   return (
     <section className="hero bg-base-200 py-4 px-4 md:px-0 md:py-28 my-10 rounded-lg">
@@ -31,16 +36,28 @@ const HeroSection = () => {
           <h1 className="text-4xl font-bold my-4 font-montserrat">
             Saif Mohammad Sarwar
           </h1>
-          <p className="text-xl font-medium mb-4 text-teal-600">
+          {/* <p className="text-xl font-medium mb-4 text-teal-600">
             Full-stack Web Developer
-          </p>
-          <p className="text-lg leading-relaxed mb-8">
+          </p> */}
+          <span className="text-3xl font-bold text-teal-600"> a {''}
+            <Typewriter
+              words={["Frontend Developer", "React Developer"]}
+              loop={Infinity}
+              cursor
+              cursorStyle="|"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+              onLoopDone={handleDone}
+            />
+          </span>
+          <p className="text-lg leading-relaxed mt-5 mb-8">
             Passionate about building dynamic and responsive web applications
             that solve real-world problems. Always learning and experimenting
             with new technologies to create impactful user experiences.
           </p>
           <h3 className="uppercase text-teal-600 font-bold">find with me </h3>
-          <div className="flex items-center justify-center md:justify-normal gap-5  mb-5">
+          <div className="grid grid-cols-3 md:grid-cols-4  gap-5  mb-5">
             <a
               href="https://www.facebook.com/saif.m.sarwar"
               target="_blank"
@@ -95,11 +112,11 @@ const HeroSection = () => {
         </div>
 
         {/* Right - Image */}
-        <div className="md:w-96 btnn pointer-events-none"  data-aos="fade-left">
+        <div className="md:w-96 btnn  pointer-events-none" data-aos="fade-left">
           <img
             src={myImage} // Replace with your image URL
             alt=""
-            className="myImage rounded-lg "
+            className="myImage rounded-lg"
           />
         </div>
       </div>

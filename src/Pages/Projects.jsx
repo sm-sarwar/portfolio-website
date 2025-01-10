@@ -50,7 +50,7 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="btnn group m-2 group bg-white/10 rounded-lg  relative after:absolute after:h-full after:bg-teal-600 z-20 shadow-lg after:-z-20 after:w-full after:inset-0 after:rounded-lg transition-all duration-300 hover:transition-all hover:duration-300 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden cursor-pointer after:-translate-y-full after:hover:translate-y-0 [&amp;_p]:delay-200 [&amp;_p]:transition-all hover:scale-110 hover:-translate-y-2 hover:text-white"
+            className="btnn flex flex-col justify-between group m-2 group bg-white/10 rounded-lg  relative after:absolute after:h-full after:bg-teal-600 z-20 shadow-lg after:-z-20 after:w-full after:inset-0 after:rounded-lg transition-all duration-300 hover:transition-all hover:duration-300 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden cursor-pointer after:-translate-y-full after:hover:translate-y-0 [&amp;_p]:delay-200 [&amp;_p]:transition-all hover:scale-110 hover:-translate-y-2 hover:text-white"
             data-aos="fade-up" // Add AOS animation
             data-aos-delay={`${index * 200}`} // Delay the animation based on the index (optional)
           >
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
               <a
                 href="#"
                 onClick={() => setSelectedProject(project)}
-                className=" btnn shadow-md group-hover:text-black hover:scale-110 hover:translate-y-2"
+                className="w-full  flex justify-center gap-2 items-center mx-auto text-teal-600 text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-teal-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10  overflow-hidden border-2 rounded-xl group py-2 px-4  hover:bg-teal-600 transition duration-300"
               >
                  Details
               </a>
@@ -78,7 +78,7 @@ const ProjectsSection = () => {
       {selectedProject && (
         <div className="fixed inset-0  flex justify-center items-center z-50">
           <div
-            className="bg-base-300 btnn p-8 rounded-lg w-full md:w-1/2"
+            className="bg-base-300 btnn p-8 rounded-lg w-full md:w-1/2 "
             data-aos="fade-in" // Add AOS animation for modal
           >
             <button
@@ -101,14 +101,14 @@ const ProjectsSection = () => {
               <a
                 href={selectedProject.liveLink}
                 target="_blank"
-                className="btnn hover:translate-y-2"
+                className="btnn hover:translate-y-2  text-teal-600 text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-teal-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10  overflow-hidden border-2 rounded-xl group py-2 px-4  hover:bg-teal-600 transition duration-300"
               >
                 Live Demo
               </a>
               <a
                 href={selectedProject.githubLink}
                 target="_blank"
-                className="btnn hover:translate-y-2"
+                className="btnn hover:translate-y-2  text-teal-600 text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-teal-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10  overflow-hidden border-2 rounded-xl group py-2 px-4  hover:bg-teal-600 transition duration-300"
               >
                 GitHub
               </a>
