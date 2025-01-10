@@ -29,7 +29,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar  text-white max-w-screen-xl mx-auto py-5">
+      <div className="navbar  max-w-screen-xl mx-auto py-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,13 +50,13 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className=" uppercase menu-sm dropdown-content bg-white text-black rounded-box z-[1] mt-3 w-52 p-2 shadow "
+              className=" uppercase menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow "
             >
               {links}
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">
-            <img className="w-28" src={logo} alt="" />
+            <img className="w-28 bg-teal-600" src={logo} alt="" />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex ">
@@ -69,7 +69,7 @@ const Navbar = () => {
             href="https://drive.google.com/file/d/1vvnM4zc6D5i36-odQVDUEXXIgn2plNzV/view?usp=sharing"
             target="_blank" 
             rel="noopener noreferrer"
-            className="btn bg-[#00EEFF] border-0 hover:bg-[#00ccff] py-3"
+            className="btnn   hover:bg-teal-600 py-3 hover:text-white"
           >
             Download Resume
           </a>

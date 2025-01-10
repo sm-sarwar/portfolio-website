@@ -44,28 +44,28 @@ const ProjectsSection = () => {
   }, []);
 
   return (
-    <section className="projects py-20 px-4 bg-gray-900 text-white">
-      <h2 className="text-4xl font-extrabold text-center text-[#00EEFF] mb-10">My Projects</h2>
+    <section className="projects py-20 px-4 bg-base-200 rounded-lg">
+      <h2 className="text-4xl font-extrabold text-center text-teal-600 mb-10">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="card bg-gray-800 rounded-lg overflow-hidden shadow-lg"
+            className="btnn group m-2 group bg-white/10 rounded-lg  relative after:absolute after:h-full after:bg-teal-600 z-20 shadow-lg after:-z-20 after:w-full after:inset-0 after:rounded-lg transition-all duration-300 hover:transition-all hover:duration-300 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden cursor-pointer after:-translate-y-full after:hover:translate-y-0 [&amp;_p]:delay-200 [&amp;_p]:transition-all hover:scale-110 hover:-translate-y-2 hover:text-white"
             data-aos="fade-up" // Add AOS animation
             data-aos-delay={`${index * 200}`} // Delay the animation based on the index (optional)
           >
             <img
               src={project.image}
               alt={project.name}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover rounded-lg transition transform duration-500 group-hover:scale-110"
             />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold text-[#00EEFF] mb-4">{project.name}</h3>
-              <p className="text-lg text-gray-300 mb-4">{project.shortDes}</p>
+            <div className="">
+              <h3 className="text-2xl font-semibold text-teal-600 group-hover:text-white translate-y-2 mb-4">{project.name}</h3>
+              <p className="text-lg  mb-4">{project.shortDes}</p>
               <a
                 href="#"
                 onClick={() => setSelectedProject(project)}
-                className="text-[#00EEFF] font-medium hover:underline"
+                className=" btnn shadow-md group-hover:text-black hover:scale-110 hover:translate-y-2"
               >
                  Details
               </a>
@@ -76,18 +76,18 @@ const ProjectsSection = () => {
 
       {/* Project Detail Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div className="fixed inset-0  flex justify-center items-center z-50">
           <div
-            className="bg-gray-800 p-8 rounded-lg w-full md:w-1/2"
+            className="bg-base-300 btnn p-8 rounded-lg w-full md:w-1/2"
             data-aos="fade-in" // Add AOS animation for modal
           >
             <button
               onClick={() => setSelectedProject(null)}
-              className="text-white absolute top-4 right-4 text-2xl"
+              className=" absolute top-4 right-4 text-2xl"
             >
               &times;
             </button>
-            <h3 className="text-3xl font-semibold text-[#00EEFF] mb-4">{selectedProject.name}</h3>
+            <h3 className="text-3xl font-semibold text-teal-600 mb-4">{selectedProject.name}</h3>
             <p className="text-lg mb-4">
               <span className="font-bold">Tech Stack:</span> {selectedProject.techStack}
             </p>
@@ -101,14 +101,14 @@ const ProjectsSection = () => {
               <a
                 href={selectedProject.liveLink}
                 target="_blank"
-                className="bg-[#00EEFF] text-gray-900 px-6 py-3 rounded-lg font-medium transition duration-300 hover:bg-[#00ccff]"
+                className="btnn hover:translate-y-2"
               >
                 Live Demo
               </a>
               <a
                 href={selectedProject.githubLink}
                 target="_blank"
-                className="bg-[#00EEFF] text-gray-900 px-6 py-3 rounded-lg font-medium transition duration-300 hover:bg-[#00ccff]"
+                className="btnn hover:translate-y-2"
               >
                 GitHub
               </a>
