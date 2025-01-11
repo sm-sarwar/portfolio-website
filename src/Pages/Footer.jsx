@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo2.png";
 const Footer = () => {
   return (
     <footer className="bg-base-200  py-12">
@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Left Section */}
           <div>
             <h3 className=" text-2xl font-semibold  mb-4 w-36">
-              <img className="bg-teal-600" src={logo} alt="" />
+              <img className="w-20" src={logo} alt="" />
             </h3>
             <p className="text-lg">
               I am a passionate web developer building dynamic and responsive

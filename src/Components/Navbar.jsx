@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo2.png";
 
 const Navbar = () => {
   const links = (
@@ -29,8 +29,8 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="navbar  max-w-screen-xl mx-auto py-5">
-        <div className="navbar-start">
+      <div className="navbar  max-w-screen-xl mx-auto py-4">
+        <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -55,8 +55,8 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
-            <img className="w-28 bg-teal-600" src={logo} alt="" />
+          <a className="">
+            <img className="w-20  p-0" src={logo} alt="" />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex ">
@@ -69,9 +69,9 @@ const Navbar = () => {
             href="https://drive.google.com/file/d/1vvnM4zc6D5i36-odQVDUEXXIgn2plNzV/view?usp=sharing"
             target="_blank" 
             rel="noopener noreferrer"
-            className="btnn btn  hover:bg-teal-600 py-3 hover:text-white"
+            className="btnn btn  hover:bg-teal-600 py-3 hover:text-white text-teal-600"
           >
-            Download Resume
+            Get Resume
           </a>
         </div>
       </div>

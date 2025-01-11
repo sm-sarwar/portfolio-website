@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import aboutPic from "../assets/profile-pic (5).png";
+
 
 const AboutMeSection = () => {
   useEffect(() => {
