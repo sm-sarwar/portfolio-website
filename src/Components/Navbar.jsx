@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end space-x-3">
           <a
-            href="https://drive.google.com/file/d/1vvnM4zc6D5i36-odQVDUEXXIgn2plNzV/view?usp=sharing"
+            href="https://drive.google.com/file/d/1a1HhSEtbwFo-xJ0ingndhgAXarOUY9fQ/view?usp=sharing"
             target="_blank" 
             rel="noopener noreferrer"
             className="btnn btn  hover:bg-teal-600 py-3 hover:text-white text-teal-600"

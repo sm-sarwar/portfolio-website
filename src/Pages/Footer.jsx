@@ -4,8 +4,8 @@ import logo from "../assets/logo2.png";
 const Footer = () => {
   return (
     <footer className="bg-base-200  py-12">
-      <div className="container mx-auto px-6 md:px-0">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="container mx-auto px-6  ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 place-items-center mx-auto">
           {/* Left Section */}
           <div>
             <h3 className=" text-2xl font-semibold  mb-4 w-36">
@@ -38,7 +38,7 @@ const Footer = () => {
                 <FaGithub className="text-center text-3xl"></FaGithub>
               </a>
               <a
-                href="https://www.linkedin.com/in/saif-sarwar-737170264/"
+                href="https://www.linkedin.com/in/saif-sarwar404/"
                 target="_blank"
                 className="btnn m-2 group px-10 py-5 bg-white/10 rounded-lg flex flex-col items-center justify-center gap-2 relative after:absolute after:h-full after:bg-teal-600 z-20 shadow-lg after:-z-20 after:w-full after:inset-0 after:rounded-lg transition-all duration-300 hover:transition-all hover:duration-300 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden cursor-pointer after:-translate-y-full after:hover:translate-y-0 [&amp;_p]:delay-200 [&amp;_p]:transition-all hover:scale-110 hover:-translate-y-2"
               >
