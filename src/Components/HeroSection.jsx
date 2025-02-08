@@ -40,7 +40,7 @@ const HeroSection = () => {
             {" "}
             a {""}
             <Typewriter
-              words={["Frontend Developer", "React Developer"]}
+              words={["MERN stack Developer","Frontend Developer", "React Developer"]}
               loop={Infinity}
               cursor
               cursorStyle="|"
